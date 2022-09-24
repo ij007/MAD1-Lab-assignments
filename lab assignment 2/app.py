@@ -75,7 +75,7 @@ def studentDetails(p2):
             f.write(Template(temp1).render(rows=att, mark=sum))
 
     else:
-        with open('error.html', 'w') as f:
+        with open('output.html', 'w') as f:
             f.write(error)
 
 def courseDetails(p2):
@@ -106,7 +106,7 @@ def courseDetails(p2):
             f.write(Template(temp2).render(avg=avg, max=max))
     
     else:
-        with open('error.html', 'w') as f:
+        with open('output.html', 'w') as f:
             f.write(error)
 
 if __name__ == "__main__":
@@ -117,5 +117,5 @@ if __name__ == "__main__":
     elif p1 == '-c':
         courseDetails(p2)
     else:
-        with open('error.html', 'w') as f:
+        with open('output.html', 'w') as f:
             f.write(error)
