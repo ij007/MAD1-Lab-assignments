@@ -22,7 +22,7 @@ temp1 = '''
 <td>{{row[2]}}</td>
 </tr>
 {% endfor %}
-<td colspan="2">Marks</td>
+<td colspan="2" style="text-align: center;">Marks</td>
 <td>{{mark}}</td>
 </table>
 </body>
